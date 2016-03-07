@@ -1,0 +1,14 @@
+logs/*
+!.gitkeep
+node_modules/
+tmp
+.idea
+.DS_Store
+angular-phonecat-snapshots
+bower_components/
+app/js/**/*.js
+app/js/**/*.map
+typings/
+dist/
+jspm_packages
+app/**/*.gitkeep
