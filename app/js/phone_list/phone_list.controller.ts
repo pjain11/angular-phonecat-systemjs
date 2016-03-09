@@ -5,7 +5,7 @@
 //    this.phones = Phone.query();
 //    this.orderProp = 'age';
 //  }]);
-
+import './phones.scss!';
 PhoneListCtrl.$inject = ['Phone'];
 
 function PhoneListCtrl(Phone) {

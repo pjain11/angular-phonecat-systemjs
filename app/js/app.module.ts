@@ -4,12 +4,17 @@ import 'angular-animate';
 import 'angular-resource';
 import 'angular-route';
 
+import 'bootstrap/css/bootstrap.css!';
+
 
 import core from './core/core.module';
 import phoneList from './phone_list/phone_list.module';
 import phoneDetail from './phone_detail/phone_detail.module';
 
 import phoneListTemplate from './phone_list/phone_list.html!text';
+import phoneDetailTemplate from './phone_detail/phone_detail.html!text';
+
+import '../styles/base.scss!';
 
 angular.module('phonecatApp', [
   'ngRoute',
@@ -23,13 +28,12 @@ configure.$inject = ['$routeProvider'];
 function configure($routeProvider) {
   $routeProvider.
       when('/phones', {
-        //templateUrl: 'js/phone_list/phone_list.html',
         template: phoneListTemplate,
         controller: 'PhoneListCtrl',
         controllerAs: 'vm'
       }).
       when('/phones/:phoneId', {
-          templateUrl: 'js/phone_detail/phone_detail.html',
+        template: phoneDetailTemplate,
         controller: 'PhoneDetailCtrl',
         controllerAs: 'vm'
       }).

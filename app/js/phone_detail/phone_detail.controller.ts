@@ -12,6 +12,8 @@
 //    };
 //  }]);
 
+import './phones_detail.scss!';
+
 PhoneDetailCtrl.$inject = ['$routeParams', 'Phone']
 
 function PhoneDetailCtrl($routeParams, Phone) {
